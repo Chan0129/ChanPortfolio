@@ -63,7 +63,14 @@ a:hover {
 }
 
 .logo {
+  cursor: pointer;
   font-size: 2rem;
+  transition: 0.3s ease;
+}
+.logo:hover {
+  transform: scale(1.1);
+  color: var(--accent-color);
+  cursor: pointer;
 }
 
 .logo:hover {
