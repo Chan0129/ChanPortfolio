@@ -53,19 +53,21 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
+  transition: 0.3s ease-in-out;
 }
 
 a:hover {
   color: var(--accent-color);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: var(--accent-color);
+  transform: scale(1.1);
 }
 
 .logo {
   cursor: pointer;
   font-size: 2rem;
-  transition: 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .logo:hover {
   transform: scale(1.1);
@@ -187,8 +189,18 @@ section {
   margin: auto 0;
   border-radius: 50%;
 }
+
 .img-profile {
   border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.img-profile:hover {
+  box-shadow: 0 0 25px var(--accent-color), 0 0 50px var(--accent-color),
+    0 0 100px var(--accent-color);
+  transform: scale(1.1);
 }
 .section__text {
   align-self: center;
@@ -225,8 +237,12 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  transition: 0.3s ease-in-out;
 }
-
+.icon:hover {
+  color: var(--accent-color);
+  transform: scale(1.1);
+}
 /* BUTTONS */
 
 .btn-container {
@@ -251,6 +267,7 @@ section {
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .btn-color-1,
@@ -260,7 +277,7 @@ section {
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(235, 137, 9);
 }
 
 .btn-color-2 {
@@ -316,8 +333,13 @@ section {
   border: var(--accent-color) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+  transition: 0.3s ease-in-out;
 }
-
+.details-container:hover {
+  box-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color),
+    0 0 20px var(--accent-color);
+  transform: scale(1.1);
+}
 .section-container {
   gap: 4rem;
   height: 80%;
