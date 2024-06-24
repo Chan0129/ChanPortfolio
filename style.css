@@ -8,7 +8,7 @@
 }
 :root {
   --main-color: #000000;
-  --accent-color: #ffa600;
+  --accent-color: #e0ae26;
 }
 
 body {
@@ -71,7 +71,6 @@ a:hover {
 }
 .logo:hover {
   transform: scale(1.1);
-  color: var(--accent-color);
   cursor: pointer;
 }
 
@@ -119,12 +118,11 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 10px;
+  padding: 20px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
-  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -192,15 +190,12 @@ section {
 
 .img-profile {
   border-radius: 50%;
-  position: relative;
   cursor: pointer;
   transition: 0.4s ease-in-out;
 }
 
 .img-profile:hover {
-  box-shadow: 0 0 25px var(--accent-color), 0 0 50px var(--accent-color),
-    0 0 100px var(--accent-color);
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .section__text {
   align-self: center;
@@ -336,9 +331,7 @@ section {
   transition: 0.3s ease-in-out;
 }
 .details-container:hover {
-  box-shadow: 0 0 5px var(--accent-color), 0 0 10px var(--accent-color),
-    0 0 20px var(--accent-color);
-  transform: scale(1.1);
+  transform: scale(1.03);
 }
 .section-container {
   gap: 4rem;
