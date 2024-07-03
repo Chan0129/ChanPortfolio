@@ -6,7 +6,10 @@
   margin: 0;
   padding: 0;
 }
-
+:root {
+  --main-color: #000000;
+  --accent-color: #e0ae26;
+}
 body {
   font-family: "Poppins", sans-serif;
 }
@@ -52,10 +55,10 @@ a {
 }
 
 a:hover {
-  color: grey;
+  color: var(--accent-color);
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: rgb(181, 181, 181);
+  text-decoration-color: var(--accent-color);
 }
 
 .logo {
@@ -236,7 +239,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--accent-color) 0.1rem solid;
 }
 
 .btn-color-1:hover,
@@ -246,12 +249,12 @@ section {
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: rgb(53, 53, 53);
+  background: var(--accent-color);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(0, 0, 0);
+  background: rgb(230, 129, 14);
 }
 
 .btn-color-2 {
@@ -303,7 +306,7 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--accent-color) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
@@ -398,7 +401,7 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
+  border: var(--accent-color) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
