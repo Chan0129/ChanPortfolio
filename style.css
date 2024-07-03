@@ -6,10 +6,6 @@
   margin: 0;
   padding: 0;
 }
-:root {
-  --main-color: #000000;
-  --accent-color: #e0ae26;
-}
 
 body {
   font-family: "Poppins", sans-serif;
@@ -20,7 +16,7 @@ html {
 }
 
 p {
-  color: var(--main-color);
+  color: rgb(85, 85, 85);
 }
 
 /* TRANSITION */
@@ -53,25 +49,17 @@ a {
   color: black;
   text-decoration: none;
   text-decoration-color: white;
-  transition: 0.3s ease-in-out;
 }
 
 a:hover {
-  color: var(--accent-color);
+  color: grey;
   text-decoration: underline;
   text-underline-offset: 1rem;
-  text-decoration-color: var(--accent-color);
-  transform: scale(1.1);
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
-  cursor: pointer;
   font-size: 2rem;
-  transition: 0.3s ease-in-out;
-}
-.logo:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 .logo:hover {
@@ -118,11 +106,12 @@ a:hover {
 
 .menu-links a {
   display: block;
-  padding: 20px;
+  padding: 20px 30px;
   text-align: center;
   font-size: 1.5rem;
   color: black;
   text-decoration: none;
+  transition: all 0.3 ease-in-out;
 }
 
 .menu-links li {
@@ -130,7 +119,9 @@ a:hover {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  border-radius: 10px;
+  max-height: 500px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
 }
 
 .hamburger-icon.open span:first-child {
@@ -185,18 +176,11 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
-  border-radius: 50%;
 }
-
 .img-profile {
   border-radius: 50%;
-  cursor: pointer;
-  transition: 0.4s ease-in-out;
 }
 
-.img-profile:hover {
-  transform: scale(1.03);
-}
 .section__text {
   align-self: center;
   text-align: center;
@@ -232,12 +216,8 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
-  transition: 0.3s ease-in-out;
 }
-.icon:hover {
-  color: var(--accent-color);
-  transform: scale(1.1);
-}
+
 /* BUTTONS */
 
 .btn-container {
@@ -256,23 +236,22 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-  border: var(--accent-color) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 .btn-color-1,
 .btn-color-2:hover {
-  background: var(--accent-color);
+  background: rgb(53, 53, 53);
   color: white;
 }
 
 .btn-color-1:hover {
-  background: rgb(235, 137, 9);
+  background: rgb(0, 0, 0);
 }
 
 .btn-color-2 {
@@ -311,7 +290,6 @@ section {
 
 .about-pic {
   border-radius: 2rem;
-  filter: grayscale(100%);
 }
 
 .arrow {
@@ -325,14 +303,11 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: var(--accent-color) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
-  transition: 0.3s ease-in-out;
 }
-.details-container:hover {
-  transform: scale(1.03);
-}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -351,7 +326,7 @@ section {
 }
 
 .experience-sub-title {
-  color: var(--accent-color);
+  color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
@@ -423,7 +398,7 @@ article .icon {
   display: flex;
   justify-content: center;
   border-radius: 2rem;
-  border: var(--accent-color) 0.1rem solid;
+  border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
@@ -459,30 +434,4 @@ footer {
 
 footer p {
   text-align: center;
-}
-/* Fade-in effect */
-.fade-in {
-  opacity: 0;
-  animation: fadeInAnimation ease 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeInAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-} /* Initial hidden state */
-.fade-in-section {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 1s ease-out, transform 1s ease-out;
-}
-
-/* Visible state */
-.fade-in-section.visible {
-  opacity: 1;
-  transform: translateY(0);
 }
