@@ -63,10 +63,12 @@ a:hover {
 
 .logo {
   font-size: 2rem;
+  transition: 300ms ease-in-out;
 }
 
 .logo:hover {
   cursor: default;
+  transform: scale(1.1);
 }
 
 /* HAMBURGER MENU */
@@ -182,8 +184,11 @@ section {
 }
 .img-profile {
   border-radius: 50%;
+  transition: 300ms ease-in-out;
 }
-
+.img-profile:hover {
+  transform: scale(1.03);
+}
 .section__text {
   align-self: center;
   text-align: center;
@@ -219,6 +224,10 @@ section {
 .icon {
   cursor: pointer;
   height: 2rem;
+  transition: 300ms ease-in-out;
+}
+.icon:hover {
+  transform: scale(1.1);
 }
 
 /* BUTTONS */
@@ -240,11 +249,13 @@ section {
 .btn-color-1,
 .btn-color-2 {
   border: var(--accent-color) 0.1rem solid;
+  transition: 300ms ease-in-out;
 }
 
 .btn-color-1:hover,
 .btn-color-2:hover {
   cursor: pointer;
+  transform: scale(1.1);
 }
 
 .btn-color-1,
@@ -310,7 +321,19 @@ section {
   border-color: rgb(163, 163, 163);
   text-align: center;
 }
-
+.project-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: var(--accent-color) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  transition: 300ms ease-in-out;
+}
+.project-container:hover {
+  transform: scale(1.03);
+}
 .section-container {
   gap: 4rem;
   height: 80%;
